@@ -14,7 +14,7 @@
     "temporal": {
       "icon": "https://temporal.io/favicon.svg",
       "source": {
-        "repo": "baranberkay96/temporal-railway",
+        "repo": "christensen143/temporal-railway",
         "rootDirectory": "/services/temporal"
       },
       "preDeployCommand": [
@@ -72,8 +72,8 @@
           "required": false
         },
         "NUM_HISTORY_SHARDS": {
-          "defaultValue": "512",
-          "description": "History shards. FIXED at first start; cannot be changed later. 512 = Temporal's small-production guidance.",
+          "defaultValue": "8",
+          "description": "History shards. FIXED at first start; cannot be changed later. 8 = Temporal's small-production guidance.",
           "required": false
         },
         "BIND_ON_IP": {
@@ -125,12 +125,12 @@
           "required": true
         },
         "DEFAULT_NAMESPACE": {
-          "defaultValue": "default",
+          "defaultValue": "factory",
           "description": "Namespace created on first deploy.",
           "required": false
         },
         "DEFAULT_NAMESPACE_RETENTION": {
-          "defaultValue": "7d",
+          "defaultValue": "14d",
           "description": "Retention of closed workflow histories in that namespace.",
           "required": false
         }
@@ -168,8 +168,8 @@
           "required": true
         },
         "TEMPORAL_DEFAULT_NAMESPACE": {
-          "defaultValue": "default",
-          "description": "Namespace opened by default.",
+          "defaultValue": "factory",
+          "description": "Namespace opened by factory.",
           "required": false
         },
         "TEMPORAL_CORS_ORIGINS": {
