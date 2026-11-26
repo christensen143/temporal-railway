@@ -73,7 +73,7 @@
         },
         "NUM_HISTORY_SHARDS": {
           "defaultValue": "8",
-          "description": "History shards. FIXED at first start; cannot be changed later. 8 = Temporal's small-production guidance.",
+          "description": "History shards. FIXED at first start; cannot be changed later. 8 is plenty for a single-user factory.",
           "required": false
         },
         "BIND_ON_IP": {
@@ -169,7 +169,7 @@
         },
         "TEMPORAL_DEFAULT_NAMESPACE": {
           "defaultValue": "factory",
-          "description": "Namespace opened by factory.",
+          "description": "Namespace opened by default.",
           "required": false
         },
         "TEMPORAL_CORS_ORIGINS": {
@@ -187,7 +187,7 @@
     "temporal-ui-gateway": {
       "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/caddy.svg",
       "source": {
-        "repo": "baranberkay96/temporal-railway",
+        "repo": "christensen143/temporal-railway",
         "rootDirectory": "/services/ui-gateway"
       },
       "startCommand": null,
